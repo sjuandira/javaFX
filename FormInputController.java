@@ -1,4 +1,4 @@
-package prak15_rifan;
+package prak15_SalsabilaJuandiraa;
 
 import java.io.IOException;
 import javafx.event.ActionEvent;
