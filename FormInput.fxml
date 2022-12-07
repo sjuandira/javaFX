@@ -4,23 +4,18 @@
 <?import javafx.scene.control.Label?>
 <?import javafx.scene.control.TextField?>
 <?import javafx.scene.layout.AnchorPane?>
-<?import javafx.scene.text.Font?>
 
 
-<AnchorPane id="AnchorPane" prefHeight="400.0" prefWidth="600.0" xmlns:fx="http://javafx.com/fxml/1" xmlns="http://javafx.com/javafx/18" fx:controller="prak15_salsabilajuandiraa.FormInputController">
+<AnchorPane id="AnchorPane" prefHeight="400.0" prefWidth="600.0" xmlns:fx="http://javafx.com/fxml/1" xmlns="http://javafx.com/javafx/18" fx:controller="prak15_rifan.FormInputController">
    <children>
-      <Label layoutX="212.0" layoutY="49.0" text="Tambah Data Mahasiswa">
-         <font>
-            <Font name="System Bold" size="16.0" />
-         </font>
-      </Label>
-      <Label fx:id="lblNpm" layoutX="36.0" layoutY="110.0" text="NPM" />
-      <TextField layoutX="152.0" layoutY="106.0" prefHeight="26.0" prefWidth="400.0" />
-      <Label fx:id="lblNama" layoutX="36.0" layoutY="155.0" text="Nama Lengkap" />
-      <TextField layoutX="152.0" layoutY="151.0" prefHeight="26.0" prefWidth="400.0" />
-      <Label fx:id="lblAlamat" layoutX="36.0" layoutY="200.0" text="Alamat" />
-      <TextField layoutX="152.0" layoutY="195.0" prefHeight="46.0" prefWidth="400.0" />
-      <Button fx:id="btnTambah" layoutX="474.0" layoutY="282.0" mnemonicParsing="false" onAction="#sendData" text="Tambah" />
-      <Button fx:id="btnCancel" layoutX="399.0" layoutY="282.0" mnemonicParsing="false" text="Cancel" />
+      <Label layoutX="183.0" layoutY="27.0" style="-fx-font-size: 20; -fx-font-weight: bold;" text="Tambah Data Mahasiswa" />
+      <Label layoutX="55.0" layoutY="91.0" text="NPM" />
+      <Label layoutX="55.0" layoutY="139.0" text="Nama Lengkap" />
+      <Label layoutX="55.0" layoutY="191.0" text="Alamat" />
+      <Button fx:id="btnTambah" layoutX="495.0" layoutY="289.0" mnemonicParsing="false" onAction="#sendData" text="Tambah" />
+      <Button layoutX="14.0" layoutY="360.0" mnemonicParsing="false" text="Cancel" />
+      <TextField fx:id="fieldNpm" layoutX="183.0" layoutY="87.0" prefHeight="26.0" prefWidth="372.0" />
+      <TextField fx:id="fieldNama" layoutX="183.0" layoutY="135.0" prefHeight="26.0" prefWidth="372.0" />
+      <TextField fx:id="fieldAlamat" layoutX="183.0" layoutY="188.0" prefHeight="26.0" prefWidth="372.0" />
    </children>
 </AnchorPane>

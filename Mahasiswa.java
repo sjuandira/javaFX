@@ -1,47 +1,43 @@
-/*
- * To change this license header, choose License Headers in Project Properties.
- * To change this template file, choose Tools | Templates
- * and open the template in the editor.
- */
-package prak15_salsabilajuandiraa;
 
-/**
- *
- * @author Praktikan
- */
+package prak15_rifan;
+
+import javafx.scene.control.TextField;
+
+
 public class Mahasiswa {
-    private  String Npm;
-    private String Nama;
-    private String Alamat;
+    private String npm;
+    private String nama;
+    private String alamat;
 
-    public Mahasiswa(String Npm, String Nama, String Alamat) {
-        this.Npm = Npm;
-        this.Nama = Nama;
-        this.Alamat = Alamat;
+    public Mahasiswa(String npm, String nama, String alamat) {
+        this.npm = npm;
+        this.nama = nama;
+        this.alamat = alamat;
     }
 
     public String getNpm() {
-        return Npm;
+        return npm;
     }
 
-    public void setNpm(String Npm) {
-        this.Npm = Npm;
+    public void setNpm(String npm) {
+        this.npm = npm;
     }
 
     public String getNama() {
-        return Nama;
+        return nama;
     }
 
-    public void setNama(String Nama) {
-        this.Nama = Nama;
+    public void setNama(String nama) {
+        this.nama = nama;
     }
 
     public String getAlamat() {
-        return Alamat;
+        return alamat;
     }
 
-    public void setAlamat(String Alamat) {
-        this.Alamat = Alamat;
+    public void setAlamat(String alamat) {
+        this.alamat = alamat;
     }
+    
     
 }

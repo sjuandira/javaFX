@@ -1,4 +1,4 @@
-package prak15_salsabilajuandiraa;
+package prak15_rifan;
 
 import java.io.IOException;
 import javafx.event.ActionEvent;
@@ -13,10 +13,10 @@ import javafx.stage.Stage;
 public class OutputController {
 
     @FXML
-    private Label lblAlamat;
+    private Button btnNew;
 
     @FXML
-    private Button btnDataBaru;
+    private Label lblAlamat;
 
     @FXML
     private Label lblNama;
@@ -26,14 +26,16 @@ public class OutputController {
 
     @FXML
     void openForm(ActionEvent event) throws IOException {
-        Parent root= FXMLLoader.load(getClass().getResource("FormInput.fxml"));
+        Parent root = FXMLLoader.load(getClass().getResource("FormInput.fxml"));
         
-        Stage stage= (Stage) btnDataBaru.getScene().getWindow();
+        Stage stage = (Stage) btnNew.getScene().getWindow();
         stage.setScene(new Scene(root));
     }
-    public void showValue(Mahasiswa mhs){
+    
+    void showValue(Mahasiswa mhs){
         lblNpm.setText(mhs.getNpm());
         lblNama.setText(mhs.getNama());
         lblAlamat.setText(mhs.getAlamat());
     }
+
 }
